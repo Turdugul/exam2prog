@@ -1,6 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgItem"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/statusItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/speciesItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="species"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/typeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/genderItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/originItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="origin"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/locationNameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location name"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/episodeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="episode"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/urlItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/createdItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

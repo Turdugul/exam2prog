@@ -1,7 +1,5 @@
 package com.example.progexam
 
 interface Click {
-    fun onClick(id : Long){}
-    fun onShow() {}
-
+    fun onClick(id : Long)
 }

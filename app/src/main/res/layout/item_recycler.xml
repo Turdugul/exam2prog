@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgItem"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/NameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/StatusItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/SpeciesItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="species"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/LocationNameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location name"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
