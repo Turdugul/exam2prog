@@ -48,7 +48,7 @@ class FragmentDetail: Fragment(R.layout.fragment_detail) {
 
                 }
                 .doOnError {
-                    Toast.makeText(requireContext(), "error data fragment", Toast.LENGTH_SHORT)
+                    Toast.makeText(requireContext(), " detail error!", Toast.LENGTH_SHORT)
                         .show()
                 }
                 .subscribe()
