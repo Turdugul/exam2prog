@@ -2,6 +2,7 @@ package com.example.progexam
 
 import android.app.Application
 import android.util.Log
+import androidx.room.Room
 import androidx.viewbinding.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -14,12 +15,20 @@ import java.util.concurrent.TimeUnit
 class App : Application() {
 
     private val isDebug get() = BuildConfig.DEBUG
+        lateinit var database: AppDatabase
 
     lateinit var rickandmortyapi: Rickandmortyapi
 
     override fun onCreate() {
         super.onCreate()
         mInstance = this
+
+        database = Room.databaseBuilder(this, AppDatabase::class.java, "database")
+            .fallbackToDestructiveMigration()
+            .allowMainThreadQueries()
+            .build()
+
+
         val okHttpClient = OkHttpClient.Builder()
             .connectTimeout(TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(TIMEOUT, TimeUnit.SECONDS)
